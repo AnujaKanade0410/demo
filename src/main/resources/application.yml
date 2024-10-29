@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    vault:
+      token: hvs.wQstneKgCWNo0dMxGrB8qvuV
+    config:
+      server:
+        composite:
+          - type: vault
+            kv-version: 2
+            order: 1
+          - type: git
+            uri: https://github.com/AnujaKanade0410/config-server-properties
+            order: 2
+  profiles:
+    active: composite
+
+server.port: 8888
+
+encrypt.key: "Secret Key"
