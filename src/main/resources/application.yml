@@ -1,7 +1,7 @@
 spring:
   cloud:
     vault:
-      token: hvs.wQstneKgCWNo0dMxGrB8qvuV
+      token: vault-plaintext-root-token
     config:
       server:
         composite:
