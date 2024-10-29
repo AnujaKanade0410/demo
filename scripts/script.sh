@@ -13,7 +13,7 @@ echo "Waiting for vault to start..."
 
 echo "Add entries to vault"
 export VAULT_ADDR='http://127.0.0.1:8200'
-export VAULT_TOKEN='hvs.wQstneKgCWNo0dMxGrB8qvuV'
+export VAULT_TOKEN='vault-plaintext-root-token'
 
 echo "Adding a property for all applications (same as application.yml)"
 vault kv put secret/application only.in.vault="Hello"
